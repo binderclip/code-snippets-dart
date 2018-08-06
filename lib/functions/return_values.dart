@@ -12,7 +12,7 @@ int qux() {
 
 main() {
   print(foo());
-  print(bar());
+  // print(bar()); // warning: The expression here has a type of 'void', and therefore cannot be used.
   print(baz());
   print(qux());
 }
