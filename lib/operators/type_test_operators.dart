@@ -23,7 +23,7 @@ class Employee extends Person {
 }
 
 main() {
-  var emp = new Employee.fromJson({});
+  var emp = Employee.fromJson({});
 
   // Prints:
   // in Person

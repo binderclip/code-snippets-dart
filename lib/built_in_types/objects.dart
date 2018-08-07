@@ -8,9 +8,9 @@ testPrintType() {
   var b = 1.1;
   var c = 'c';
   var d = [1];
-  var e = new Map();
+  var e = Map();
   var f = '\u{1f44f}';
-  var g = new Runes('\u{1f44f}');
+  var g = Runes('\u{1f44f}');
   printType(a);
   printType(b);
   printType(c);

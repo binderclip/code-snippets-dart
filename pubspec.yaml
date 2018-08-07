@@ -5,7 +5,7 @@ description: A library for collecting Dart code examples, such as testing featur
 # author: clip <binderclip2014#gmail.com>
 
 environment:
-  sdk: '>=2.0.0-dev.55.0 <2.0.0'
+  sdk: ^2.0.0
 
 dependencies:
   meta: ^1.1.6

@@ -18,20 +18,20 @@ class AddressBook {
 }
 
 main() {
-  final addressBookStr = (new AddressBook()
+  final addressBookStr = (AddressBook()
     ..name = 'jenny'
     ..email = 'jenny@example.com'
-    ..phone = (new PhoneNumber()
+    ..phone = (PhoneNumber()
       ..number = '415-555-0100'
       ..label = 'home')
         .toString())
       .toString();
   print(addressBookStr);
 
-  var phoneNumber = new PhoneNumber();
+  var phoneNumber = PhoneNumber();
   phoneNumber.number = '433-555-0101';
   phoneNumber.label = 'office';
-  var addressBook = new AddressBook();
+  var addressBook = AddressBook();
   addressBook.name = 'jenny';
   addressBook.email = 'jenny@example.com';
   addressBook.phone = phoneNumber.toString();

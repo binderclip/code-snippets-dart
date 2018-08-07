@@ -7,7 +7,7 @@ testInitMap() {
     'fifth': 'golden rings'
   };
 
-  var nobleGases = new Map();
+  var nobleGases = Map();
   print(gifts);
   print(nobleGases);
 }
@@ -21,7 +21,7 @@ testModifyMap() {
   gifts['fifth'] = 'golden rings';
   print(gifts);
 
-  var nobleGases = new Map();
+  var nobleGases = Map();
   nobleGases[2] = 'helium';
   nobleGases[10] = 'neon';
   print(nobleGases);
