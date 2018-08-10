@@ -1,5 +1,14 @@
-main() {
-  print('Hello, world!');
+import 'dart:async';
+
+Stream<int> asynchronousNaturalsTo(int n) async* {
+  int k = 0;
+  while (k < n) yield k++;
+}
+
+main() async {
+  await for (var n in asynchronousNaturalsTo(5)) {
+    print(n);
+  }
 }
 
 // https://www.dartlang.org/guides/language/language-tour#handling-streams
