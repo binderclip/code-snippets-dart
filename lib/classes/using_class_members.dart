@@ -24,13 +24,13 @@ class Point2 {
 main() {
   var p = Point(1, 3);
 
-// Set the value of the instance variable y.
+  // Set the value of the instance variable y.
   p.y = 8;
 
-// Get the value of y.
+  // Get the value of y.
   assert(p.y == 8);
 
-// Invoke distanceTo() on p.
+  // Invoke distanceTo() on p.
   num distance = p.distanceTo(Point(4, 4));
   print(distance);
 }
