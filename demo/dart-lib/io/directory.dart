@@ -30,8 +30,15 @@ listDirectoryDemo() {
     });
 }
 
+dirFromStringDemo() {
+  printFuncName();
+  final dir = Directory('~/');
+  print(dir);
+}
+
 main() {
   // printPWD();
   // createDirectoryDemo();
-  listDirectoryDemo();
+  // listDirectoryDemo();
+  dirFromStringDemo();
 }
