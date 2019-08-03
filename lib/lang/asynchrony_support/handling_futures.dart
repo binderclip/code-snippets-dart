@@ -19,9 +19,15 @@ l() async {
   print('lookup: ${await lookUpVersion()}');
 }
 
+p() {
+  final version = lookUpVersion();
+  print('p version: $version');
+}
+
 main() {
   c();
   l();
+  p();
 }
 
 // https://www.dartlang.org/guides/language/language-tour#handling-futures
