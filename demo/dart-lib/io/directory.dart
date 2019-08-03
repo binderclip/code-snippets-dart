@@ -26,7 +26,7 @@ listDirectoryDemo() {
   dir.list(recursive: false, followLinks: false)
     .listen((FileSystemEntity entity) {
       final entityType = entity is File ? 'file' : (entity is Directory ? 'dir' : 'link');
-      print("$entity.path, $entityType, $entity.type");
+      print("${entity.path}, $entityType");
     });
 }
 
