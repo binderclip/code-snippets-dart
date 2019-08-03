@@ -1,5 +1,7 @@
+import '../../lib/stack_trace/stack_trace.dart';
+
 testStringWithQuotes() {
-  print('=== testStringWithQuotes ===');
+  printFuncName();
   var s1 = 'Single quotes work well for string literals.';
   var s2 = "Double quotes work just as well.";
   var s3 = 'It\'s easy to escape the string delimiter.';
@@ -11,7 +13,7 @@ testStringWithQuotes() {
 }
 
 testStringInterpolation() {
-  print('=== testStringInterpolation ===');
+  printFuncName();
   var s = 'string interpolation';
 
   assert('Dart has $s, which is very handy.' ==
@@ -21,7 +23,7 @@ testStringInterpolation() {
 }
 
 testConcatenateString() {
-  print('=== testConcatenateString ===');
+  printFuncName();
   var s1 = 'String '
       'concatenation'
       " works even over line breaks.";
@@ -37,7 +39,7 @@ testConcatenateString() {
 }
 
 testMultiLineString() {
-  print('=== testMultiLineString ===');
+  printFuncName();
   var s1 = '''first line
 second line''';
   var s2 = '''
@@ -57,7 +59,7 @@ second line
 }
 
 testRawString() {
-  print('=== testRawString ===');
+  printFuncName();
   var s1 = 'In a normal string,\nsome chars will be escaped.';
   print(s1);
   var s2 = r'In a raw string, not even \n gets special treatment.';
@@ -65,7 +67,7 @@ testRawString() {
 }
 
 testCompileTimeConstantInterpolatedExpression() {
-  print('=== testCompileTimeConstantInterpolatedExpression ===');
+  printFuncName();
   // These work in a const string.
   const aConstNum = 0;
   const aConstBool = true;
