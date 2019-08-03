@@ -1,23 +1,35 @@
 import 'dart:io';
-import "package:stack_trace";
+
+import '../../lib/stack_trace/stack_trace.dart';
 
 printPWD() {
+  printFuncName();
   Directory current = Directory.current;
   print(current);
 }
 
 readFileDemo() {
-  new File('demo.txt').readAsString().then((String contents) {
+  printFuncName();
+  new File('demo/dart-lib/io/demo.txt').readAsString().then((String contents) {
     print(contents);
   });
 }
 
+createFileDemo() {
+  printFuncName();
+  final filename = 'demo/dart-lib/io/x/demo-w.txt';
+  new File(filename).writeAsString('some content')
+    .then((File file) {
+      file.readAsString().then((String contents) {
+        print(contents);
+      });
+    });
+}
+
 main() {
-  printPWD();
+  // printPWD();
   // readFileDemo();
-  var stack = StackTrace.current;
-  var stackString = "$stack";
-  print(stackString);
+  createFileDemo();
 }
 
 // https://api.flutter.dev/flutter/dart-io/File-class.html

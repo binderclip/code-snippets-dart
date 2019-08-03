@@ -6,7 +6,8 @@ demoFunc() {
 }
 
 printFuncName() {
-  print(Trace.current().frames[1].member);  // prints "main" unless minified.
+  final funcName = Trace.current().frames[1].member;
+  print("== $funcName ==");
 }
 
 main() {
