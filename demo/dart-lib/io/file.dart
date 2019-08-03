@@ -2,12 +2,6 @@ import 'dart:io';
 
 import '../../lib/stack_trace/stack_trace.dart';
 
-printPWD() {
-  printFuncName();
-  Directory current = Directory.current;
-  print(current);
-}
-
 readFileDemo() {
   printFuncName();
   new File('demo/dart-lib/io/demo.txt').readAsString().then((String contents) {
@@ -27,7 +21,6 @@ createFileDemo() {
 }
 
 main() {
-  // printPWD();
   // readFileDemo();
   createFileDemo();
 }
