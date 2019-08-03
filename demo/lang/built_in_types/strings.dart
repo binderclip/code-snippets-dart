@@ -84,13 +84,20 @@ testCompileTimeConstantInterpolatedExpression() {
   // const invalidConstString = '$aNum $aBool $aString $aConstList';
 }
 
+testSplitString() {
+  printFuncName();
+  final s = '/foo/bar/baz.qux';
+  print(s.split('/'));
+}
+
 main() {
-  testStringWithQuotes();
-  testStringInterpolation();
-  testConcatenateString();
-  testMultiLineString();
-  testRawString();
-  testCompileTimeConstantInterpolatedExpression();
+  // testStringWithQuotes();
+  // testStringInterpolation();
+  // testConcatenateString();
+  // testMultiLineString();
+  // testRawString();
+  // testCompileTimeConstantInterpolatedExpression();
+  testSplitString();
 }
 
 // https://www.dartlang.org/guides/language/language-tour#strings
