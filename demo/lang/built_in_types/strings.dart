@@ -90,6 +90,12 @@ testSplitString() {
   print(s.split('/'));
 }
 
+stringCompare() {
+  printFuncName();
+  final es = '';
+  print('es.isEmpty: ${es.isEmpty}');
+}
+
 main() {
   // testStringWithQuotes();
   // testStringInterpolation();
@@ -97,8 +103,10 @@ main() {
   // testMultiLineString();
   // testRawString();
   // testCompileTimeConstantInterpolatedExpression();
-  testSplitString();
+  // testSplitString();
+  stringCompare();
 }
 
 // https://www.dartlang.org/guides/language/language-tour#strings
 // https://www.dartlang.org/guides/libraries/library-tour#strings-and-regular-expressions
+// https://stackoverflow.com/questions/42446566/dart-null-false-empty-checking-how-to-write-this-shorter
