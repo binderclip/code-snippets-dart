@@ -26,11 +26,22 @@ listIndexDemo() {
   // print(l[5]); // RangeError (index): Invalid value: Not in range 0..2, inclusive: 5
 }
 
-main() {
-  testList();
-  listIndexDemo();
+initList() {
+  List<int> l;
+  print(l);
+  // l.add(1); // NoSuchMethodError: The method 'add' was called on null.
+  l = new List(5);
+  print(l);
+  // l.add(1); // Unsupported operation: Cannot add to a fixed-length list
+  l[0] = 1;
+  print(l);
 }
 
+main() {
+  // testList();
+  // listIndexDemo();
+  initList();
+}
 
 // https://www.dartlang.org/guides/language/language-tour#lists
 // https://www.dartlang.org/guides/language/language-tour#generics
