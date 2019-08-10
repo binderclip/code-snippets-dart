@@ -94,6 +94,8 @@ stringCompare() {
   printFuncName();
   final es = '';
   print('es.isEmpty: ${es.isEmpty}');
+  final String esn = null;
+  print('esn?.isEmpty ?? true: ${esn?.isEmpty ?? true}');
 }
 
 main() {
