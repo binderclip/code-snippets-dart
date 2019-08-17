@@ -1,5 +1,7 @@
 import 'package:meta/meta.dart';
 
+import '../../lib/stack_trace/stack_trace.dart';
+
 enableFlags({bool bold, bool hidden}) {
   print('bold: $bold, hidden: $hidden');
 }
@@ -9,7 +11,7 @@ setName({@required String firstName, String lastName}) {
 }
 
 testOptionalNamedParameters() {
-  print('=== testOptionalNamedParameters ===');
+  printFuncName();
   enableFlags(bold: true, hidden: false);
   enableFlags(bold: true);
   enableFlags(hidden: false);
@@ -30,7 +32,7 @@ post(String from, String msg, [String platform]) {
 }
 
 testOptionalPositionalParameters() {
-  print('=== testOptionalPositionalParameters ===');
+  printFuncName();
   post('clip', "感觉秋天快来了​");
   post('clip', "这将是一个困难", "Google+");
 }
@@ -73,7 +75,7 @@ void doStuff(
 }
 
 testDefaultParameterValues() {
-  print('=== testDefaultParameterValues ===');
+  printFuncName();
   enableFlags2();
   post2('clip', '感觉自己坏掉了');
   post2('clip', '感觉自己坏掉了', 'Weibo', 'suck');

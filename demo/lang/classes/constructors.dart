@@ -1,5 +1,7 @@
 import 'dart:math';
 
+import '../../lib/stack_trace/stack_trace.dart';
+
 
 class Point {
   num x, y;
@@ -48,7 +50,7 @@ void printPoint(p) {
 
 
 void testDefaultNamedConstructors() {
-  print('=== testDefaultNamedConstructors ===');
+  printFuncName();
   var p1 = Point(1, 2);
   var p2 = Point2(3, 4);
   var p3 = Point3();
@@ -79,7 +81,7 @@ class Employee extends Person {
 
 
 void testInvokingSuperclassConstructor() {
-  print('=== testInvokingSuperclassConstructor ===');
+  printFuncName();
   var emp = new Employee.fromJson({});
 
   // Prints:
@@ -119,7 +121,7 @@ class Point6 {
 
 
 void testInitializerList() {
-  print('=== testInitializerList ===');
+  printFuncName();
   var p5 = Point5.fromJson({"x": 7, "y": 8});
   printPoint(p5);
   var p6 = Point6(3, 4);
@@ -139,7 +141,7 @@ class Point7 {
 
 
 void testRedirectingConstructors() {
-  print('=== testRedirectingConstructors ===');
+  printFuncName();
   var p7 = Point7.alongXAxis(10);
   printPoint(p7);
 }
@@ -155,7 +157,7 @@ class ImmutablePoint {
 
 
 void testConstantConstructors() {
-  print('=== testConstantConstructors ===');
+  printFuncName();
   final ip = ImmutablePoint(1, 2);
   printPoint(ip);
   // ip.x = 100; // 'x' can't be used as a setter because it is final.
@@ -193,7 +195,7 @@ class Logger {
 
 
 void testFactoryConstructors() {
-  print('=== testFactoryConstructors ===');
+  printFuncName();
   var logger = Logger('UI');
   logger.log('Button clicked');
   var logger2 = Logger('UI');

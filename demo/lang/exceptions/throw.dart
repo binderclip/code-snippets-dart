@@ -1,5 +1,7 @@
+import '../../lib/stack_trace/stack_trace.dart';
+
 testThrowObject() {
-  print('=== testThrowObject ===');
+  printFuncName();
   throw 'Out of llamas!';
 }
 

@@ -1,5 +1,7 @@
 import 'dart:math';
 
+import '../../lib/stack_trace/stack_trace.dart';
+
 class Point {
   num x, y;
 
@@ -14,7 +16,7 @@ class Point {
 
 
 void testInstanceMethods() {
-  print('=== testInstanceMethods ===');
+  printFuncName();
   var p1 = Point(1, 1);
   var p2 = Point(4, 5);
   print(p1.distanceTo(p2));
@@ -35,7 +37,7 @@ class Rectangle {
 
 
 void testGettersAndSetters() {
-  print('=== testGettersAndSetters ===');
+  printFuncName();
   var r = Rectangle(1, 2, 3, 4);
   print('(${r.left}, ${r.right})');
   r.right = 3;
@@ -58,7 +60,7 @@ class EffectiveDoer extends Doer {
 
 
 void testAbstractMethods() {
-  print('=== testAbstractMethods ===');
+  printFuncName();
 //  var doer = Doer(); // Error: The class 'Doer' is abstract and can't be instantiated.
   var eDoer = EffectiveDoer();
   eDoer.doSomething();

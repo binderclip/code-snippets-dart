@@ -7,7 +7,7 @@ demoFunc() {
 
 printFuncName() {
   final funcName = Trace.current().frames[1].member;
-  print("== $funcName ==");
+  print("=== $funcName ===");
 }
 
 main() {

@@ -1,9 +1,11 @@
+import '../../lib/stack_trace/stack_trace.dart';
+
 printType(a) {
   print(a.runtimeType);
 }
 
 testPrintType() {
-  print('=== testPrintType ===');
+  printFuncName();
   var a = 1;
   var b = 1.1;
   var c = 'c';

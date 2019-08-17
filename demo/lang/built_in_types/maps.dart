@@ -1,5 +1,7 @@
+import '../../lib/stack_trace/stack_trace.dart';
+
 testInitMap() {
-  print('=== testInitMap ===');
+  printFuncName();
   var gifts = {
     // Key:    Value
     'first': 'partridge',
@@ -13,7 +15,7 @@ testInitMap() {
 }
 
 testModifyMap() {
-  print('=== testModifyMap ===');
+  printFuncName();
   var gifts = {
     'first': 'partridge',
   };
@@ -28,7 +30,7 @@ testModifyMap() {
 }
 
 testRetrieveMapValue() {
-  print('=== testRetrieveMapValue ===');
+  printFuncName();
   var gifts = {
     'first': 'partridge',
   };
@@ -38,7 +40,7 @@ testRetrieveMapValue() {
 }
 
 testConstMap() {
-  print('=== testConstMap ===');
+  printFuncName();
   final constantMap = const {
     2: 'helium',
     10: 'neon',

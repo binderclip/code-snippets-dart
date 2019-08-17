@@ -1,3 +1,5 @@
+import '../../lib/stack_trace/stack_trace.dart';
+
 class Television {
   void turnOn() {
     print('in Television turnOn');
@@ -26,7 +28,7 @@ class SmartTelevision extends Television {
 }
 
 void testExtendAndOverridingMembers() {
-  print('=== testExtendAndOverridingMembers ===');
+  printFuncName();
   var st = SmartTelevision();
   st.turnOn();
   st.play();
@@ -47,7 +49,7 @@ class Vector {
 }
 
 void testOverridableOperators() {
-  print('=== testOverridableOperators ===');
+  printFuncName();
   final v = Vector(2, 3);
   final w = Vector(2, 2);
 
@@ -73,7 +75,7 @@ class B {
 }
 
 void testNoSuchMethod() {
-  print('=== testNoSuchMethod ===');
+  printFuncName();
   dynamic a = A();
 //  var b = B();
 //  dynamic b2 = B();

@@ -1,5 +1,7 @@
+import '../../lib/stack_trace/stack_trace.dart';
+
 testBooleans() {
-  print('=== testBooleans ===');
+  printFuncName();
   // Check for an empty string.
   var fullName = '';
   assert(fullName.isEmpty);

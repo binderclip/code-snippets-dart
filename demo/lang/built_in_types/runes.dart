@@ -1,5 +1,7 @@
+import '../../lib/stack_trace/stack_trace.dart';
+
 testRunesAndStringTrans() {
-  print('=== testRunesAndStringTrans ===');
+  printFuncName();
   var clappingString = '\u{1f44f}';
   var clappingRunes = Runes('\u{1f44f}');
   for (var i = 0; i < clappingString.runes.toList().length; i++) {
@@ -13,7 +15,7 @@ testRunesAndStringTrans() {
 }
 
 testRunesAndStringLength() {
-  print('=== testRunesAndStringLength ===');
+  printFuncName();
   var heartRunes = Runes('\u2665');
   print("'$heartRunes' len ${heartRunes.length}");
 

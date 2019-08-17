@@ -1,10 +1,10 @@
 main() {
-  print('=== while ===');
+  print('== while ==');
   var i = 3;
   while (i > 0) {
     print(i--);
   }
-  print('=== do while ===');
+  print('== do while ==');
   var j = 0;
   do {
     print(j);
