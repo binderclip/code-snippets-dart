@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import '../../lang/classes/getting_an_object_s_type.dart';
-import '../../lib/stack_trace/stack_trace.dart';
+import 'package:dart_code_snippets/dart_lang/classes/getting_an_object_s_type.dart';
+import 'package:dart_code_snippets/stack_trace/stack_trace.dart';
 
 final userJs = """{
   "name": "John Smith",

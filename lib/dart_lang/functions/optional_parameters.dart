@@ -1,6 +1,6 @@
 import 'package:meta/meta.dart';
 
-import '../../lib/stack_trace/stack_trace.dart';
+import 'package:dart_code_snippets/stack_trace/stack_trace.dart';
 
 enableFlags({bool bold, bool hidden}) {
   print('bold: $bold, hidden: $hidden');

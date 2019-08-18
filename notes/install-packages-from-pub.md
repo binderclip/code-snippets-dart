@@ -4,6 +4,9 @@
 
 https://pub.dev/packages/front_matter#-installing-tab-
 
+```shell
+pub get
+```
 
 - [Dart Packages](https://pub.dartlang.org/)
 - [Getting Started with Pub | Dart](https://www.dartlang.org/tools/pub/get-started)

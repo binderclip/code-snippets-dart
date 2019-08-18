@@ -1,4 +1,4 @@
-import '../../lib/stack_trace/stack_trace.dart';
+import 'package:dart_code_snippets/stack_trace/stack_trace.dart';
 
 testRunesAndStringTrans() {
   printFuncName();
