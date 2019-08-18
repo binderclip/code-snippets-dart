@@ -5,7 +5,7 @@ import '../../lib/stack_trace/stack_trace.dart';
 
 final s = '''---
 foo: bar
-baz: qux 
+baz: qux
 ''';
 
 dumpDemo() {
