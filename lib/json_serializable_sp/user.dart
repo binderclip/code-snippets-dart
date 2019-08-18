@@ -1,5 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
 
+import 'address.dart';
+
 /// This allows the `User` class to access private members in
 /// the generated file. The value for this is *.g.dart, where
 /// the star denotes the source file name.
@@ -10,11 +12,13 @@ part 'user.g.dart';
 @JsonSerializable()
 
 class User {
-  User(this.name, this.email);
-
   // @JsonKey(name: 'name')
   String name;
   String email;
+  Address address;
+  List<String> nicknames;
+
+  User(this.name, this.email, this.address, this.nicknames);
 
   /// A necessary factory constructor for creating a new User instance
   /// from a map. Pass the map to the generated `_$UserFromJson()` constructor.
