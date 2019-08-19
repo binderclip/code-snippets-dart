@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:dart_code_snippets/dart_lang/classes/getting_an_object_s_type.dart';
 import 'package:dart_code_snippets/stack_trace/stack_trace.dart';
@@ -57,9 +58,23 @@ jsonEncodeModel() {
   print(userJs);
 }
 
+readJsonFileDemo() {
+  printFuncName();
+  File('lib/convert/foo.json').readAsString().then((fileContent) => jsonDecode(fileContent)).then((jsonData) => print(jsonData));
+}
+
+writeJsonFileDemo() {
+  printFuncName();
+  var user = User('Foo', 'bar@baz.com');
+  var userJs = jsonEncode(user);
+  File('lib/convert/bar.json').writeAsString(userJs).then((file) => print(file));
+}
+
 main() {
   jsonDecodeDemo();
   jsonEncodeDemo();
   jsonDecodeModel();
   jsonEncodeModel();
+  readJsonFileDemo();
+  writeJsonFileDemo();
 }
