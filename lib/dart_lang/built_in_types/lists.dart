@@ -1,3 +1,4 @@
+import 'package:dart_code_snippets/dart_lang/typedefs/typedefs.dart';
 import 'package:dart_code_snippets/stack_trace/stack_trace.dart';
 
 testList() {
@@ -52,10 +53,20 @@ initList() {
   print(l); // [null, null, 3, 4, 5]
 }
 
+sortListDemo() {
+  printFuncName();
+  var l = [3, 1, 2];
+  l.sort();
+  print(l);
+  l.sort((a, b) => b - a);
+  print(l);
+}
+
 main() {
   // testList();
   // listIndexDemo();
-  initList();
+  // initList();
+  sortListDemo();
 }
 
 // https://www.dartlang.org/guides/language/language-tour#lists

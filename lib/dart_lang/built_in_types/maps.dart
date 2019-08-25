@@ -50,14 +50,28 @@ testConstMap() {
   print(constantMap);
 }
 
+forInMapDemo() {
+  printFuncName();
+  var gifts = {
+    'first': 'partridge',
+  };
+  for (var item in gifts.entries) {
+    print('${item.key}: ${item.value}');
+  }
+  // gifts.keys
+  // gifts.values
+}
+
 main() {
   testInitMap();
   testModifyMap();
   testRetrieveMapValue();
   testConstMap();
+  forInMapDemo();
 }
 
 // https://www.dartlang.org/guides/language/language-tour#maps
 // https://api.dartlang.org/dev/dart-core/Map-class.html
 // https://www.dartlang.org/guides/language/language-tour#generics
 // https://www.dartlang.org/guides/libraries/library-tour#maps
+// https://stackoverflow.com/questions/53824755/flutter-dart-how-to-access-a-single-entry-in-a-map-object
