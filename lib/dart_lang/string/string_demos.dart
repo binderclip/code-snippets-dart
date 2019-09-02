@@ -9,5 +9,6 @@ trimDemo() {
 }
 
 main() {
-  trimDemo();
+  // trimDemo();
+  print("xxx".endsWith("x"));
 }
